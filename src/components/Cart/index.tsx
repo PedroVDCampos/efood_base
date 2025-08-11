@@ -54,7 +54,7 @@ const Cart = () => {
     <CartContainer className={isOpen ? 'is-open' : ''}>
       <Overlay onClick={closeCart} />
       <SideBar>
-        <ul>
+        <ul className={items.length >= 8 ? 'scrollable' : ''}>
           {items.map((item) => (
             <CartItem key={item.id}>
               <img className="product-image" src={item.foto} alt={item.nome} />

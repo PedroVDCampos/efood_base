@@ -34,6 +34,11 @@ export const SideBar = styled.aside`
   background-color: ${cores.rosa};
   z-index: 1;
   padding: 32px 8px 0px 8px;
+  ul.scrollable {
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 8px;
+  }
 `
 
 export const Prices = styled.div`
